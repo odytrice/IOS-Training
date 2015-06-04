@@ -38,18 +38,34 @@
                                     <action selector="switchView:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="HGg-DB-zcO"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UaG-RU-PCh">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                <state key="normal" title="Segue">
+                                    <color key="titleColor" red="0.98076809200000004" green="1" blue="0.99688310749999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <variation key="widthClass=compact" fixedFrame="YES">
+                                    <rect key="frame" x="124" y="214" width="153" height="89"/>
+                                </variation>
+                                <connections>
+                                    <segue destination="D0r-Sc-HqM" kind="modal" id="QJA-To-ECX"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="0.47865782229030296" blue="0.53769388530193296" alpha="1" colorSpace="calibratedRGB"/>
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="Wq7-vm-6YF"/>
                                 <exclude reference="BXU-Yd-NKs"/>
+                                <exclude reference="UaG-RU-PCh"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
                             <mask key="subviews">
                                 <include reference="Wq7-vm-6YF"/>
                                 <include reference="BXU-Yd-NKs"/>
+                                <include reference="UaG-RU-PCh"/>
                             </mask>
                         </variation>
                     </view>
