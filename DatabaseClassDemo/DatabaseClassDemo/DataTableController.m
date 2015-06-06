@@ -37,6 +37,11 @@
     dataList = [self loadData];
 }
 
+-(void)viewDidAppear:(BOOL)animated{
+    dataList = [self loadData];
+    [self.tableView reloadData];
+}
+
 -(void) initDB{
     NSArray *dirpaths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     
